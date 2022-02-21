@@ -1,0 +1,9 @@
+main[role='article']:nth-child(2) h3{
+	color: blue;
+
+}
+
+
+#zen-participation h3{
+    color:blue;
+}
