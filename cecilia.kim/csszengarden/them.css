@@ -1,9 +1,38 @@
-main[role='article']:nth-child(2) h3{
-	color: blue;
+html {
+	width: 100%;
+	margin: 0;
+}
+
+body {
+	width: 100%;
+	font-family:'Noto Serif Display', serif;
+	font-weight: bold;
+	color: lightcoral;
+	background-color: greenyellow;
+	position: relative;
 
 }
 
+p {
+	margin-bottom: 10px;
+	text-align: center;
+}
 
-#zen-participation h3{
-    color:blue;
+p.ex3 {
+  border: 2px solid black;
+  outline-style: outset;
+  outline-color: grey;
+}
+
+
+h1 {
+  background-color: darkgrey;
+}
+
+div {
+  background-color: whitesmoke;
+}
+
+p {
+  background-color: yellow;
 }

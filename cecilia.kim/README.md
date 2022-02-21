@@ -4,5 +4,4 @@
 
 ## Important Links
 
-- http://hdraws.com
-- http://hdraws.com/aau/wnm617/cline.hamilton
+- https://yoonjin.godaddysites.com/
