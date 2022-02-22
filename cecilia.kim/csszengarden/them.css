@@ -1,38 +1,42 @@
-html {
+html{
 	width: 100%;
 	margin: 0;
 }
 
-body {
-	width: 100%;
-	font-family:'Noto Serif Display', serif;
-	font-weight: bold;
-	color: lightcoral;
-	background-color: greenyellow;
-	position: relative;
-
+body{
+	background-image: url(img/bg.jpeg);
+	background-position: left;
+	background-repeat: no-repeat;
+	background-color: steelblue;
+	font-family: 'Noto Sans', sans-serif;
+	text-align: left;
 }
 
-p {
-	margin-bottom: 10px;
-	text-align: center;
+footer{
+    height: 100px;
+    margin: 20px;
+    padding: 18px;
+    display: flex;
+    border-radius: 30px;
 }
 
-p.ex3 {
-  border: 2px solid black;
-  outline-style: outset;
-  outline-color: grey;
-}
+p{  font-size: 18px;
+    text-align: left;
+    line-height: 28px;
+    color: var(--white-color);
 
-
-h1 {
-  background-color: darkgrey;
 }
 
 div {
-  background-color: whitesmoke;
+  background-color: transparent;
+
 }
 
-p {
-  background-color: yellow;
+
+a{
+    color: var(--orange-color);
+    font-size: 20px;
+    text-decoration-line: none;
+    font-style: italic;
+
 }
