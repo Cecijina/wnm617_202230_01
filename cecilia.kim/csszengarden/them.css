@@ -12,19 +12,11 @@ body{
 	text-align: left;
 }
 
-footer{
-    height: 100px;
-    margin: 20px;
-    padding: 18px;
-    display: flex;
-    border-radius: 30px;
-}
 
 p{  font-size: 18px;
     text-align: left;
     line-height: 28px;
     color: var(--white-color);
-
 }
 
 div {
@@ -32,11 +24,18 @@ div {
 
 }
 
-
 a{
     color: var(--orange-color);
     font-size: 20px;
     text-decoration-line: none;
     font-style: italic;
+}
 
+
+footer{
+    height: 100px;
+    padding: 20px;
+    margin: 30px;
+    margin-top: 30px;
+    display: flex;
 }
