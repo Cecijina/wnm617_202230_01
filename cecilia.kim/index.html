@@ -11,12 +11,20 @@
 
 
 	<script src="lib/js/jquery-2.2.4.min.js"></script>
-	<script src="js/aoo.js"></script>
+	<script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/app.js"></script>
 </head>
 <body>
 	<section data-role="page" id="signin-page">
-		<div data-role="main">
-			<form id="signing-form" class="form">
+		<div data-role="main" class="display-flex flex-column">
+			<div class="flex-stretch"></div>
+			
+
+			<div style="text-align: center; margin-bottom: 10vmin;">
+				<img src="img/icons/dice.svg" alt="" style="width:50vmin">
+			</div>
+			
+			<form id="signin-form" class="form">
 				<div class="form-control">
 					<label for="signin-username" class="form-label">Username</label>
 					<input type="text" id="sigin-name" data-role="none" class="form-input" placeholder="Type your Username"> 
@@ -30,14 +38,16 @@
 				<div class="form-control">
 					<a href="#recent-page" class="form-button">Submit</a>
 				</div>
+				<div class="form-control" style="text-align:center;font-size: 0.8em;">
+					<p>New to the app? <a href="#signup-page">Sign Up!</a></p>
+				</div>
 			</form>	
 		</div>
 	</section>
+
 	<section data-role="page" id="recent-page">
 		<div data-role="main">
-			
-
-			
+						
 		</div>
 		
 	</section>
