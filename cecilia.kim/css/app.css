@@ -168,3 +168,105 @@ a:hover{
 	display: block;
 	padding: 0 1em;
 }
+
+
+/* Modals */
+.modal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	transition: all 0.2s;
+	opacity: 0;
+	z-index: 10;
+}
+
+.modal.active {
+	opacity: 1;
+	pointer-events: initial;
+}
+
+.modal.back{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 7);
+}
+
+
+
+.modal-back .transparent{
+	background-color: transparent;
+}
+
+.modal
+
+.modal-popup{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: calc(100vw - 20px);
+	max-height: calc(100vh - 20px);
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	transition: 0.4s;
+}
+
+.modal.active . modal-popup{
+	transform: translate(-50%, -50%);
+}
+.modal-haed,
+.modal-foot{
+	background-color: var(--color-netural-lighter);
+	line-height: 2erm;
+	padding: 0 1em;
+}
+.modal-body{background-color: white;
+	flex: 1 1 100%;
+	padding: 1em;
+}
+
+
+.modal-drawer {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	transition: all 0.3s;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.modal-drawer.left,
+.modal-drawer.right{
+	height: 100%;
+	width: 70vw;
+}
+
+.modal-drawer.left{ left: 0; transform: translateX(-100%); }
+.modal-drawer.right: ;{ right: 0; transform: translateX(-100%); }
+
+
+.modal-drawer.top,
+.modal-drawer.botto,{
+	height: 40vh;
+	width: 100%;
+}
+
+.modal-drawer.top{ left: 0; transform: translateY(-100%); }
+.modal-drawer.bottom: ;{ right: 0; transform: translateY(-100%); }
+
+.modal.active .modal-drawer{
+	transform: translate(0);
+}
+
+.map-placeholder {
+
+
+
+}
