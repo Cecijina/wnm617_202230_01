@@ -1,9 +1,6 @@
 /* CSS RESET */
 
 
-
-
-
 *, *::after, *::before {
 	box-sizing: border-box;
 }
@@ -11,10 +8,10 @@
 :root {
 	--font-sans: 'Poppins', Arial, sans-serif;
 
-	--color-neutral-light:  #e6f2f2;
-	--color-neutral-medium:  #d0e7e4;
-	--color-neutral-dark:  #2f8285;
-	--color-neutral-darkest:  #333333;
+	--color-neutral-light:  #f9de8d;
+	--color-neutral-medium: #f3d07f;
+	--color-neutral-dark:  #e9b65a;
+	--color-neutral-darkest:  #4e4e4e;
 
 
 	--header-height:  3rem;
@@ -74,7 +71,7 @@ a:hover {
 
 .ui-mobile .form-label {
 	font-size: 0.8em;
-	color: var(--color-neutral-darkest);
+	color: var(--color-neutral-dark);
 	margin: 0.5rem 0;
 
 }
@@ -96,7 +93,7 @@ a:hover {
 	display: inline-block;
 	width: 100%;
 	border-width: 0;
-	background-color: var(--color-neutral-darkest);
+	background-color: var(--color-neutral-dark);
 	color: white;
 	font: inherit;
 	font-weight: 500;
@@ -143,7 +140,7 @@ a:hover {
 	height: var(--header-height);
 	line-height: var(--header-height);
 	border-width: 0;
-	background-color: var(--color-neutral-darkest);
+	background-color: var(--color-neutral-dark);
 	color: white;
 	box-shadow: 0 0 5px rgba(0,0,0,0.15);
 	
