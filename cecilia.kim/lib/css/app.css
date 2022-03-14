@@ -1,116 +1,125 @@
-
 /* CSS RESET */
+
+
+
+
 
 *, *::after, *::before {
 	box-sizing: border-box;
 }
 
-:root{
-	--font-sans:  Helvetica, Arial, san-serif;
-	--fibt-serif: Cambria, Gergia, serif;
+:root {
+	--font-sans: 'Poppins', Arial, sans-serif;
 
-	--color-netural-lighter:  #f4f4f4;
-	--color-netural-light:  #eee;
-	--color-netural-medium:  #999;
-	--color-netural-dark:  #444;
+	--color-neutral-light:  #e6f2f2;
+	--color-neutral-medium:  #d0e7e4;
+	--color-neutral-dark:  #2f8285;
+	--color-neutral-darkest:  #333333;
 
-	--color-main-light: #eee;
-	--header-height: 3erm;
+
+	--header-height:  3rem;
 }
-
 
 body {
 	margin: 0;
 	font-size: 100%;
 	font-family: var(--font-sans);
+
 }
 
-h1,
-h2,
-h3,
-h4{
-	font-size: 1em;
+h1,h2,h3 {
+	font-size:  1em;
+	font-weight: 500;
 	font-family: var(--font-sans);
-
 }
 
-
-a{
+a {
 	color: inherit;
-	font-weight: bold;
+	font-weight: 500;
 	text-decoration: none;
+
 }
 
-a:hover{
+a:hover {
 	text-decoration: underline;
 }
 
 /* Layout Classes */
 
-.hidden {display: none;}
+.hidden { display: none; }
 
-.display-flex{display: flex;}
-.display-flex{display: block;}
-.display-inline-flex{display: inline-flex;}
-.display-inline-block{display: inline-flex;}
+.display-flex { display: flex; }
+.display-block { display: block; }
+.display-inline-flex { display: inline-flex; }
+.display-inline-block { display: inline-block; }
 
-.flex-stretch {flex: 1 1 auto;}
-.flex-none{flex: none;}
+.flex-stretch { flex: 1 1 auto; }
+.flex-none { flex: none; }
 
-.flex-align-center{align-items: center;}
-.flex-justify-center{ justify-content: center; }
+.flex-align-center { align-items: center; }
+.flex-justify-center { justify-content: center; }
 
-.flex-column{flex-direction: column;}
-.overscroll{overflow: auto;}
+.flex-column { flex-direction: column; }
 
-/* Forms */
 
-.form-control {
+
+/* FOrms */
+
+
+.form-control  {
 	margin: 1em 0;
 
+
 }
 
-.ui-mobile .form-label{
+.ui-mobile .form-label {
 	font-size: 0.8em;
-	color: var(--color-netural-medium);
+	color: var(--color-neutral-darkest);
 	margin: 0.5rem 0;
+
 }
 
-.form-input{
+.form-input {
 	display: inline-block;
 	width: 100%;
 	border-width: 0;
-	background-color: var(--color-netural-lighter);
+	background-color: var(--color-neutral-light);
 	font: inherit;
+	font-weight: 300;
 	padding: 0.5em 1em;
 	margin: 0;
 	outline: 0;
 
 }
-
 
 .form-button{
 	display: inline-block;
 	width: 100%;
 	border-width: 0;
-	background-color: var(--color-netural-light);
+	background-color: var(--color-neutral-darkest);
+	color: white;
 	font: inherit;
+	font-weight: 500;
 	padding: 0.5em 1em;
 	margin: 0;
 	outline: 0;
 	text-align: center;
 	text-decoration: none;
+
 }
 
-#signin-form, 
-#signup-form {
+#signin-form,
+#add-cat-form,
+#edit-animal-form,
+#edit-name-form {
 	padding: 1em;
 }
 
 
-/* Page Layout */
 
-.ui-mobile .ui-page-active{
+/*Page layouts*/
+
+.ui-mobile .ui-page-active {
 	display: flex;
 	flex-direction: column;
 	position: fixed;
@@ -119,28 +128,31 @@ a:hover{
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+
 }
 
-[data-role="main"]{
+[data-role="main"] {
 	flex: 1 1 100%;
 	overflow: hidden;
-	position: relative;
+	position: relative; /*scrolls on its own space*/
 }
 
 .ui-header,
-.ui-footer{
+.ui-footer {
 	flex: none;
 	height: var(--header-height);
 	line-height: var(--header-height);
 	border-width: 0;
-	background-color: white;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-
+	background-color: var(--color-neutral-darkest);
+	color: white;
+	box-shadow: 0 0 5px rgba(0,0,0,0.15);
+	
+	/*set and position child..content inside*/
 	position: relative;
 	overflow: hidden;
 }
 
-.ui-header .ui-title{
+.ui-header .ui-title {
 	margin: 0;
 	padding: 0;
 	position: absolute;
@@ -150,6 +162,28 @@ a:hover{
 	text-align: center;
 }
 
+
+.ui-header ul,
+.ui-footer ul {
+	position: relative;
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+.ui-footer li {
+	flex: 1 1 auto;
+	text-align: center;
+}
+
+.ui-header a,
+.ui-footer a {
+	display: block;
+	padding: 0 1em;
+
+}
 
 /* Layout Classes */
 
@@ -291,10 +325,12 @@ a:hover{
 	transform: translate(0);
 }
 
+/*map*/
 
-
-.map-placeholder {
-	background-image: url(../img/map.jpg);
+.map-placeholder{
+	width: 100%;
+	height: 800px;
+	background-image: url(../img/map.jpeg);
 	background-position: center;
 	background-size: cover;
 }

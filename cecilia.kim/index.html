@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Animal Tracker</title>
-	<base href="/aau/wnm617/cecilia.kim/">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Dog Tracker</title>
+   <base href="/aau/wnm617/cecilia.kim/">
 
-	<link rel="stylesheet"  href="lib/css/jquery.mobile.structure-1.4.5.min.css">
-	<link rel="stylesheet"  href="css/app.css">
+   <link rel="stylesheet"  href="lib/css/jquery.mobile.structure-1.4.5.min.css">
+   <link rel="stylesheet"  href="css/app.css">
 
 
-	<script src="lib/js/jquery-2.2.4.min.js"></script>
-	<script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
-	<script src="js/app.js"></script>
-	<script src="js/signin.js"></script>
+   <script src="lib/js/jquery-2.2.4.min.js"></script>
+   <script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
+   <script src="js/app.js"></script>
+   <script src="js/signin.js"></script>
 </head>
-
 <body>
 
    <section data-role="page" id="signin-page">
       <div data-role="main" class="display-flex flex-column">
          <div class="flex-stretch"></div>
          <div style="text-align:center;margin-bottom:10vmin">
-            <img src="demo/img/icons/dog.svg" alt="" style="width:50vmin;height:50vmin">
+            <img src="lib/img/icons/dog.svg" alt="" style="width:50vmin;height:50vmin">
          </div>
          <form id="signin-form" class="form" data-ajax="false">
             <div class="form-control">
@@ -38,7 +37,7 @@
                <button type="submit" class="form-button" data-role="none">Submit</button>
             </div>
             <div class="form-control" style="text-align:center;font-size:0.8em;">
-               <p>New to the app? <a href="#signup-page">Sign Up!</a></p>
+               <p>New to the app? <a href="#signup-page">Sign Up</a></p>
             </div>
          </form>
       </div>
@@ -59,14 +58,14 @@
             <div class="form-control">
                <label for="signup-password2" class="form-label">Confirm Password</label>
                <input type="password" id="signup-password2" data-role="none" class="form-input" placeholder="Type your Password again">
-
+            </div>
             <!-- <input type="submit" data-role="none"> -->
             <div class="form-control">
                <!-- <button type="button" class="form-button">Submit</button> -->
                <a href="#recent-page" class="form-button">Sign Up</a>
             </div>
             <div class="form-control" style="text-align:center;font-size:0.8em;">
-               <p>Already have an account? <a href="#signin-page">Sign In!</a></p>
+               <p>Already have an account? <a href="#signin-page">Sign In</a></p>
             </div>
          </form>
          <div class="flex-stretch"></div>
@@ -77,7 +76,7 @@
    <section data-role="page" id="recent-page">
       <div data-role="main" class="map-placeholder">
          <div class="marker" style="position:absolute;top:30vh;left:20vw" data-activate="#map-drawer">
-            <img src="img/icons/marker.svg" alt="" class="icon">
+<!--             <img src="img/icons/marker.svg" alt="" class="icon"> -->
          </div>
       </div>
       <footer data-role="footer">
@@ -88,7 +87,7 @@
          </ul>
       </footer>
 
-      <div class="modal" id="map-drawer">
+<!--       <div class="modal" id="map-drawer">
          <div class="modal-back transparent passthrough" data-deactivate="#map-drawer"></div>
          <div class="modal-drawer left">
             <div class="modal-head display-flex">
@@ -100,10 +99,10 @@
                
             </div>
             <div class="modal-body">
-               content
+               content!
             </div>
          </div>
-      </div>
+      </div> -->
    </section>
 
 
@@ -123,51 +122,7 @@
             <li><a href="#animal-profile-page">Animal 3</a></li>
             <li><a href="#animal-profile-page">Animal 4</a></li>
             <li><a href="#animal-profile-page">Animal 5</a></li>
-            <li><a href="#animal-profile-page">Animal 6</a></li>
-            <li><a href="#animal-profile-page">Animal 7</a></li>
-            <li><a href="#animal-profile-page">Animal 8</a></li>
-            <li><a href="#animal-profile-page">Animal 9</a></li>
-            <li><a href="#animal-profile-page">Animal 10</a></li>
-            <li><a href="#animal-profile-page">Animal 1</a></li>
-            <li><a href="#animal-profile-page">Animal 2</a></li>
-            <li><a href="#animal-profile-page">Animal 3</a></li>
-            <li><a href="#animal-profile-page">Animal 4</a></li>
-            <li><a href="#animal-profile-page">Animal 5</a></li>
-            <li><a href="#animal-profile-page">Animal 6</a></li>
-            <li><a href="#animal-profile-page">Animal 7</a></li>
-            <li><a href="#animal-profile-page">Animal 8</a></li>
-            <li><a href="#animal-profile-page">Animal 9</a></li>
-            <li><a href="#animal-profile-page">Animal 10</a></li>
-            <li><a href="#animal-profile-page">Animal 1</a></li>
-            <li><a href="#animal-profile-page">Animal 2</a></li>
-            <li><a href="#animal-profile-page">Animal 3</a></li>
-            <li><a href="#animal-profile-page">Animal 4</a></li>
-            <li><a href="#animal-profile-page">Animal 5</a></li>
-            <li><a href="#animal-profile-page">Animal 6</a></li>
-            <li><a href="#animal-profile-page">Animal 7</a></li>
-            <li><a href="#animal-profile-page">Animal 8</a></li>
-            <li><a href="#animal-profile-page">Animal 9</a></li>
-            <li><a href="#animal-profile-page">Animal 10</a></li>
-            <li><a href="#animal-profile-page">Animal 1</a></li>
-            <li><a href="#animal-profile-page">Animal 2</a></li>
-            <li><a href="#animal-profile-page">Animal 3</a></li>
-            <li><a href="#animal-profile-page">Animal 4</a></li>
-            <li><a href="#animal-profile-page">Animal 5</a></li>
-            <li><a href="#animal-profile-page">Animal 6</a></li>
-            <li><a href="#animal-profile-page">Animal 7</a></li>
-            <li><a href="#animal-profile-page">Animal 8</a></li>
-            <li><a href="#animal-profile-page">Animal 9</a></li>
-            <li><a href="#animal-profile-page">Animal 10</a></li>
-            <li><a href="#animal-profile-page">Animal 1</a></li>
-            <li><a href="#animal-profile-page">Animal 2</a></li>
-            <li><a href="#animal-profile-page">Animal 3</a></li>
-            <li><a href="#animal-profile-page">Animal 4</a></li>
-            <li><a href="#animal-profile-page">Animal 5</a></li>
-            <li><a href="#animal-profile-page">Animal 6</a></li>
-            <li><a href="#animal-profile-page">Animal 7</a></li>
-            <li><a href="#animal-profile-page">Animal 8</a></li>
-            <li><a href="#animal-profile-page">Animal 9</a></li>
-            <li><a href="#animal-profile-page">Animal 10</a></li>
+
          </ul>
       </div>
       <footer data-role="footer">
@@ -199,11 +154,10 @@
                   <label for="#list-add-animal-description" class="form-label">description</label>
                   <input type="text" class="form-input" placeholder="Type a Description" data-role="none" id="list-add-animal-description">
                </div>
-<!--                <p>Nostrum quos delectus blanditiis aperiam! Fuga excepturi, quibusdam, asperiores quis culpa vel ipsum, voluptatem quas officiis a rem nesciunt voluptatum accusamus deserunt consequuntur similique delectus dicta, quod odio. Laboriosam incidunt exercitationem ipsa necessitatibus enim neque. Quisquam totam rerum quia, nobis deleniti quae, delectus hic. Consectetur laudantium quis sunt aperiam hic quidem, velit dolores praesentium sapiente. Non, architecto, quas. Eaque, modi.</p>
+               <!-- <p>Nostrum quos delectus blanditiis aperiam! Fuga excepturi, quibusdam, asperiores quis culpa vel ipsum, voluptatem quas officiis a rem nesciunt voluptatum accusamus deserunt consequuntur similique delectus dicta, quod odio. Laboriosam incidunt exercitationem ipsa necessitatibus enim neque. Quisquam totam rerum quia, nobis deleniti quae, delectus hic. Consectetur laudantium quis sunt aperiam hic quidem, velit dolores praesentium sapiente. Non, architecto, quas. Eaque, modi.</p>
                <div class="display-flex">
                   <div class="flex-stretch"></div>
-                  <div class="flex-none">
-                  	<button class="form-button">click</button></div>
+                  <div class="flex-none"><button class="form-button">click</button></div>
                </div> -->
             </form>
             <div class="modal-foot" style="text-align:right" data-deactivate="#list-add-animal-modal">
