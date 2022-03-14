@@ -327,7 +327,7 @@ a:hover {
 .map-placeholder{
 	width: 100%;
 	height: 800px;
-	background-image: url(../img/map.jpeg);
+	background-image: url(lib/img/map.jpeg);
 	background-position: center;
 	background-size: cover;
 }
