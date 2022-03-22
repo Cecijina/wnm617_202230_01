@@ -1,30 +1,34 @@
 
 /* CSS RESET */
 
+
+
+
+
 *, *::after, *::before {
-   box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-:root {
-   --font-sans: Helvetica, Arial, sans-serif;
-   --font-serif: Cambria, Georgia, serif;
 
+:root {
+	 font-family: 'Noto Sans', sans-serif;
    --color-neutral-lighter: #f4f4f4;
    --color-neutral-light: #eee;
-   --color-neutral-medium: #999;
-   --color-neutral-dark: #444;
+   --color-neutral-medium: #ffff;
+   --color-neutral-dark: #4e4e4e;
 
-   --color-main-light: #f6bed9;
-   --color-main-medium: #e0609d;
-   --color-main-dark: #65163c;
+   --color-main-light: #f9de8d;
+   --color-main-medium:#f3d07f;
+   --color-main-dark: #e9b65a;
 
    --header-height: 3rem;
 }
 
 body {
-   margin: 0;
-   font-size: 100%;
-   font-family: var(--font-sans);
+	margin: 0;
+	font-size: 100%;
+	font-family: var(--font-sans);
+
 }
 
 h1,
@@ -33,15 +37,18 @@ h3,
 h4 {
    font-size: 1em;
    font-family: var(--font-sans);
+   font-weight: bold;
 }
 
 a {
-   color: inherit;
-   font-weight: bold;
-   text-decoration: none;
+	color: inherit;
+	font-weight: bold;
+	text-decoration: none;
+
 }
+
 a:hover {
-   text-decoration: underline;
+	text-decoration: underline;
 }
 
 
@@ -55,6 +62,7 @@ a:hover {
    background-image: url(../img/login.png);
    background-size: cover;
 }
+
 
 /* Forms */
 
@@ -70,24 +78,29 @@ a:hover {
    display: inline-block;
    width: 100%;
    border-width: 0;
-   background-color: var(--color-neutral-lighter);
+   background-color: var(--color-neutral-light);
    font: inherit;
    padding: 0.5em 1em;
    margin: 0;
    outline: 0;
 }
+
+
 .form-button {
    display: inline-block;
    width: 100%;
    border-width: 0;
    background-color: var(--color-neutral-light);
    font: inherit;
+   font-weight: bold;
    padding: 0.5em 1em;
    margin: 0;
    outline: 0;
+   border-radius: 20px;
    text-align: center;
    text-decoration: none;
 }
+
 .hotdog {
    background-color: white;
    border-radius: 2em;
@@ -110,20 +123,19 @@ a:hover {
    color: white;
 }
 
-
-
-
 #signin-form,
-#signup-form {
-   padding: 1em;
+#signup-form,
+
+#add-dog-form,
+#edit-animal-form,
+#edit-name-form,
+#dog-page-form{
+	padding: 1em;
 }
+
 #recent-search {
    box-shadow: 0.1em 0.2em 0.4em rgba(0,0,0,0.3);
 }
-
-
-
-
 .recent-search {
    margin: 1em;
    display: flex;
@@ -143,16 +155,18 @@ a:hover {
    height: 100%;
    overflow: hidden;
 }
+
 [data-role="main"] {
    flex: 1 1 100%;
    overflow: hidden;
    position: relative;
 }
+
 .ui-header,
 .ui-footer {
    flex: none;
-   height: var(--header-height);
-   line-height: var(--header-height);
+   height: 3.5rem;
+   line-height: 3.5rem;
    border-width: 0;
    background-color: white;
    box-shadow: 0 0 5px rgba(0,0,0,0.15);
@@ -160,35 +174,39 @@ a:hover {
    position: relative;
    overflow: hidden;
 }
+
+
 .ui-header .ui-title {
-   margin: 0;
-   padding: 0;
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   text-align: center;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
 }
 
 
 .ui-header ul,
 .ui-footer ul {
-   position: relative;
-   display: flex;
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
-}
-.ui-footer li {
-   flex: 1 1 auto;
-   text-align: center;
-}
-.ui-header a,
-.ui-footer a {
-   display: block;
-   padding: 0 1em;
+	position: relative;
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
+.ui-footer li {
+	flex: 1 1 auto;
+	text-align: center;
+}
+
+.ui-header a,
+.ui-footer a {
+	display: block;
+	padding: 0 1em;
+
+}
 
 
 
@@ -301,10 +319,6 @@ a:hover {
    box-shadow: 0.1em 0.2em 0.4em rgba(0,0,0,0.2);
 }
 
-
-
-
-
 .map-placeholder {
    background-image: url(../img/map.jpg);
    background-position: center;
@@ -314,9 +328,6 @@ a:hover {
    width: 2rem;
    height: 2rem;
 }
-
-
-
 
 
 /* Animal List */
@@ -350,30 +361,61 @@ a:hover {
 }
 .animal-list-name {
    font-size: 1.3em;
+   font-weight: bold;
+}
+
+
+/* dog add, dog edit*/
+.photo-profiles{
+	text-align:center;
+	margin-top:10vmin;
+	margin-bottom:5vmin;
+}
+
+.title-dog {
+	font-weight: 300;
+	color:  var(--color-middle-light);
+	font-size: .8em;
+	letter-spacing: 1px;
+	
+}
+.info-dog {
+	font-weight: 400;
+	font-size: 1em;
+	padding-bottom: 10px;
+	border-bottom: 1px solid  var(--color-middle-light) ;
+}
+
+.dog-page {
+	padding: 1em;
 }
 
 
 
 
-/* foote nav */
+
+/*foooter nav*/
+
 .nav-icon-set li.active {
-   background-color: var(--color-main-light);
+	background-color: var(--color-main-dark);
 }
 .nav-icon {
-    line-height: 2rem;
-    display: block;
+	line-height: 1rem;
+	display: block;
+
 }
-.nav-icon .icon {
-    vertical-align: middle;
-    width: 1.5em;
+
+.nav-icon.icon {
+	vertical-align: middle;
+	width: 2em;
+	
 }
+
 .nav-icon-label {
-    line-height: 1rem;
-    display: block;
-    font-size: 0.8em;
+	line-height: 1rem;
+	display: block;
+	font-size: 0.8em;
 }
-
-
 
 /* Layout Classes */
 
@@ -392,3 +434,45 @@ a:hover {
 
 .flex-column { flex-direction:column; }
 .overscroll { overflow:auto; }
+
+
+/*User*/
+.title-user {
+	font-weight: 300;
+	color:  var(--color-middle-light);
+	font-size: .8em;
+	letter-spacing: 1px;
+	
+}
+.user-info {
+	font-weight: 400;
+	font-size: 1em;
+	padding-bottom: 10px;
+	border-bottom: 1px solid  var(--color-middle-light) ;
+}
+
+.profile-name {
+	font-family:'Noto Sans', sans-serif;
+	font-weight: 400;
+	font-size: 2em;
+	letter-spacing: 1px;
+	color: var(--color-neutral-darkest);
+}
+
+.edit-profile{
+	color: #f3d07f;
+}
+
+.user-page{
+	padding: 1em;
+}
+
+
+.js-logout {
+	font-size: larger;
+	color: #e9b65a;
+	font-weight: bold;
+	text-align: center;	
+	color: var(--color-middle-dark);
+}
+
