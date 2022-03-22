@@ -37,7 +37,7 @@
                <button type="submit" class="form-button" data-role="none">Submit</button>
             </div>
             <div class="form-control" style="text-align:center;font-size:0.8em;">
-               <p>New to the app? <a href="#signup-page">Sign Up!</a></p>
+               <p>New to the app? <a href="#signup-page">Sign Up</a></p>
             </div>
          </form>
       </div>
@@ -45,7 +45,7 @@
 
    <section data-role="page" id="signup-page">
       <div data-role="main" class="display-flex flex-column">
-         <div class="flex-stretch"></div>
+         <div class="flex-stretch" style="background-image: url(lib/img/login.png);"></div>
          <form id="signup-form" class="form" data-ajax="false">
             <div class="form-control">
                <label for="signup-username" class="form-label">Username</label>
@@ -65,7 +65,7 @@
                <a href="#recent-page" class="form-button">Sign Up</a>
             </div>
             <div class="form-control" style="text-align:center;font-size:0.8em;">
-               <p>Already have an account? <a href="#signin-page">Sign In!</a></p>
+               <p>Already have an account? <a href="#signin-page">Sign In</a></p>
             </div>
          </form>
          <div class="flex-stretch"></div>
@@ -80,11 +80,11 @@
                <input type="search" data-role="none" placeholder="Search">
             </form>
             <div class="flex-none" style="line-height:3rem;padding:0 0.5em">
-               <img src="img/icons/filter.svg" style="vertical-align: middle;" alt="" class="icon">
+               <img src="lib/img/icons/setting.png" style="vertical-align: middle;" alt="" class="icon">
             </div>
          </div>
          <div class="marker" style="position:absolute;top:30vh;left:20vw" data-activate="#map-drawer">
-            <img src="img/icons/marker.svg" alt="" class="icon">
+            <img src="lib/img/icons/pin.png" alt="" class="icon">
          </div>
       </div>
       <footer data-role="footer" data-template="#footer-template"></footer>
@@ -101,7 +101,7 @@
                
             </div>
             <div class="modal-body">
-               content!
+               content
             </div>
          </div>
       </div>
@@ -110,7 +110,7 @@
 
    <section data-role="page" id="list-page">
       <header data-role="header">
-         <h1>Animal List</h1>
+         <h1>Your dog List</h1>
          <ul>
             <li class="flex-stretch"></li>
          </ul>
@@ -121,21 +121,23 @@
             <!-- li.animal-list-item*10>a[href=#animal-profile-page]>(div.animal-list-image>img[src='https://via.placeholder.com/400x400/?text=Animal$'])+div.animal-list-body>(div.animal-list-name>{Animal $})+(div.animal-list-type>{Type})+(div.animal-list-breed>{Breed}) -->
             <li class="animal-list-item">
                <a href="#animal-profile-page">
-                  <div class="animal-list-image"><img src="https://via.placeholder.com/400x400/?text=Animal1" alt=""></div>
+                  <div class="animal-list-image"><img src="lib/img/dog1.png" alt=""></div>
                   <div class="animal-list-body">
-                     <div class="animal-list-name">Animal 1</div>
-                     <div class="animal-list-type">Type</div>
-                     <div class="animal-list-breed">Breed</div>
+                     <div class="animal-list-name">Dog 1</div>
+                     <div class="animal-list-type">Age</div>
+                     <div class="animal-list-breed">Size</div>
+                     <div class="animal-list-breed">Location</div>
                   </div>
                </a>
             </li>
             <li class="animal-list-item">
                <a href="#animal-profile-page">
-                  <div class="animal-list-image"><img src="https://via.placeholder.com/400x400/?text=Animal2" alt=""></div>
+                  <div class="animal-list-image"><img src="lib/img/dog2.png" alt=""></div>
                   <div class="animal-list-body">
-                     <div class="animal-list-name">Animal 2</div>
-                     <div class="animal-list-type">Type</div>
-                     <div class="animal-list-breed">Breed</div>
+                     <div class="animal-list-name">Dog 2</div>
+                     <div class="animal-list-type">Age</div>
+                     <div class="animal-list-breed">Size</div>
+                     <div class="animal-list-breed">Location</div>
                   </div>
                </a>
             </li>
@@ -143,9 +145,10 @@
                <a href="#animal-profile-page">
                   <div class="animal-list-image"><img src="https://via.placeholder.com/400x400/?text=Animal3" alt=""></div>
                   <div class="animal-list-body">
-                     <div class="animal-list-name">Animal 3</div>
-                     <div class="animal-list-type">Type</div>
-                     <div class="animal-list-breed">Breed</div>
+                     <div class="animal-list-name">Dog 3</div>
+                     <div class="animal-list-type">Age</div>
+                     <div class="animal-list-breed">Size</div>
+                     <div class="animal-list-breed">Location</div>
                   </div>
                </a>
             </li>
@@ -153,9 +156,10 @@
                <a href="#animal-profile-page">
                   <div class="animal-list-image"><img src="https://via.placeholder.com/400x400/?text=Animal4" alt=""></div>
                   <div class="animal-list-body">
-                     <div class="animal-list-name">Animal 4</div>
-                     <div class="animal-list-type">Type</div>
-                     <div class="animal-list-breed">Breed</div>
+                     <div class="animal-list-name">Dog 4</div>
+                     <div class="animal-list-type">Age</div>
+                     <div class="animal-list-breed">Size</div>
+                     <div class="animal-list-breed">Location</div>
                   </div>
                </a>
             </li>
@@ -163,9 +167,10 @@
                <a href="#animal-profile-page">
                   <div class="animal-list-image"><img src="https://via.placeholder.com/400x400/?text=Animal5" alt=""></div>
                   <div class="animal-list-body">
-                     <div class="animal-list-name">Animal 5</div>
-                     <div class="animal-list-type">Type</div>
-                     <div class="animal-list-breed">Breed</div>
+                     <div class="animal-list-name">Dog 5</div>
+                     <div class="animal-list-type">Age</div>
+                     <div class="animal-list-breed">Size</div>
+                     <div class="animal-list-breed">Location</div>
                   </div>
                </a>
             </li>
@@ -173,9 +178,10 @@
                <a href="#animal-profile-page">
                   <div class="animal-list-image"><img src="https://via.placeholder.com/400x400/?text=Animal6" alt=""></div>
                   <div class="animal-list-body">
-                     <div class="animal-list-name">Animal 6</div>
-                     <div class="animal-list-type">Type</div>
-                     <div class="animal-list-breed">Breed</div>
+                     <div class="animal-list-name">Dog 6</div>
+                     <div class="animal-list-type">Age</div>
+                     <div class="animal-list-breed">Size</div>
+                     <div class="animal-list-breed">Location</div>
                   </div>
                </a>
             </li>
@@ -183,33 +189,13 @@
                <a href="#animal-profile-page">
                   <div class="animal-list-image"><img src="https://via.placeholder.com/400x400/?text=Animal7" alt=""></div>
                   <div class="animal-list-body">
-                     <div class="animal-list-name">Animal 7</div>
-                     <div class="animal-list-type">Type</div>
-                     <div class="animal-list-breed">Breed</div>
+                     <div class="animal-list-name">Dog 7</div>
+                     <div class="animal-list-type">Age</div>
+                     <div class="animal-list-breed">Size</div>
+                     <div class="animal-list-breed">Location</div>
                   </div>
                </a>
-            </li>
-            <li class="animal-list-item">
-               <a href="#animal-profile-page">
-                  <div class="animal-list-image"><img src="https://via.placeholder.com/400x400/?text=Animal8" alt=""></div>
-                  <div class="animal-list-body">
-                     <div class="animal-list-name">Animal 8</div>
-                     <div class="animal-list-type">Type</div>
-                     <div class="animal-list-breed">Breed</div>
-                  </div>
-               </a>
-            </li>
-            <li class="animal-list-item">
-               <a href="#animal-profile-page">
-                  <div class="animal-list-image"><img src="https://via.placeholder.com/400x400/?text=Animal9" alt=""></div>
-                  <div class="animal-list-body">
-                     <div class="animal-list-name">Animal 9</div>
-                     <div class="animal-list-type">Type</div>
-                     <div class="animal-list-breed">Breed</div>
-                  </div>
-               </a>
-            </li>
-            
+            </li>    
          </ul>
 
          <div class="floater bottom right circle-button" data-activate="#list-add-animal-modal">&plus;</div>
@@ -219,23 +205,23 @@
       <div class="modal" id="list-add-animal-modal">
          <div class="modal-back" data-deactivate="#list-add-animal-modal"></div>
          <div class="modal-popup">
-            <div class="modal-head">Add Animal</div>
+            <div class="modal-head">Add dog</div>
             <form class="modal-body overscroll" data-ajax="false">
                <div class="form-control">
                   <label for="#list-add-animal-name" class="form-label">name</label>
                   <input type="text" class="form-input" placeholder="Type a Name" data-role="none" id="list-add-animal-name">
                </div>
                <div class="form-control">
-                  <label for="#list-add-animal-type" class="form-label">type</label>
-                  <input type="text" class="form-input" placeholder="Type a Type" data-role="none" id="list-add-animal-type">
+                  <label for="#list-add-animal-type" class="form-label">Age</label>
+                  <input type="text" class="form-input" placeholder="Type a Age" data-role="none" id="list-add-animal-age">
                </div>
                <div class="form-control">
-                  <label for="#list-add-animal-breed" class="form-label">breed</label>
-                  <input type="text" class="form-input" placeholder="Type a Breed" data-role="none" id="list-add-animal-breed">
+                  <label for="#list-add-animal-breed" class="form-label">Size</label>
+                  <input type="text" class="form-input" placeholder="Type a size" data-role="none" id="list-add-animal-size">
                </div>
                <div class="form-control">
-                  <label for="#list-add-animal-description" class="form-label">description</label>
-                  <input type="text" class="form-input" placeholder="Type a Description" data-role="none" id="list-add-animal-description">
+                  <label for="#list-add-animal-description" class="form-label">Location</label>
+                  <input type="text" class="form-input" placeholder="Type a location" data-role="none" id="list-add-animal-location">
                </div>
                <!-- <p>Nostrum quos delectus blanditiis aperiam! Fuga excepturi, quibusdam, asperiores quis culpa vel ipsum, voluptatem quas officiis a rem nesciunt voluptatum accusamus deserunt consequuntur similique delectus dicta, quod odio. Laboriosam incidunt exercitationem ipsa necessitatibus enim neque. Quisquam totam rerum quia, nobis deleniti quae, delectus hic. Consectetur laudantium quis sunt aperiam hic quidem, velit dolores praesentium sapiente. Non, architecto, quas. Eaque, modi.</p>
                <div class="display-flex">
@@ -253,13 +239,13 @@
 
    <section data-role="page" id="animal-profile-page">
       <header data-role="header">
-         <h1>Animal</h1>
+         <h1>Your dog profile</h1>
          <ul>
             <li><a href="#" data-rel="back">Back</a></li>
          </ul>
       </header>
       <div data-role="main">
-         Animal profile
+         Your dog profile
          <a href="#animal-edit-page">Edit</a>
       </div>
    </section>
@@ -293,11 +279,11 @@
    <script type="text/template" id="footer-template">
       <ul class="nav-icon-set">
          <li><a href="#recent-page" data-activateone=".nav-icon-set li:nth-child(1)">
-            <span class="nav-icon"><img class="icon" src="img/icons/map.svg"></span>
-            <span class="nav-icon-label">Recent</span>
+            <span class="nav-icon"><img class="icon" src="img/icons/pin.png"></span>
+            <span class="nav-icon-label">Map</span>
          </a></li>
          <li><a href="#list-page" data-activateone=".nav-icon-set li:nth-child(2)">
-            <span class="nav-icon"><img class="icon" src="img/icons/list.svg"></span>
+            <span class="nav-icon"><img class="icon" src="img/icons/pawprint.png"></span>
             <span class="nav-icon-label">List</span>
          </a></li>
          <li><a href="#user-profile-page" data-activateone=".nav-icon-set li:nth-child(3)">

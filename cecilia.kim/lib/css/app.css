@@ -51,6 +51,11 @@ a:hover {
    background-size: cover;
 }
 
+#signup-page{
+   background-image: url(../img/login.png);
+   background-size: cover;
+}
+
 /* Forms */
 
 .form-control {
