@@ -12,8 +12,8 @@
 
 :root {
 	 font-family: 'Noto Sans', sans-serif;
-   --color-neutral-lighter: #f4f4f4;
-   --color-neutral-light: #eee;
+   --color-neutral-lighter: #ffff;
+   --color-neutral-light: #efeeec;
    --color-neutral-medium: #ffff;
    --color-neutral-dark: #4e4e4e;
 
@@ -59,7 +59,7 @@ a:hover {
 }
 
 #signup-page{
-   background-image: url(../img/login.png);
+   background-image: url(../img/signup.png);
    background-size: cover;
 }
 
@@ -71,14 +71,15 @@ a:hover {
 }
 .ui-mobile .form-label {
    font-size: 0.8em;
-   color: var(--color-neutral-medium);
+/*   color: var(--color-neutral-medium);*/
    margin: 0.5rem 0;
+   color: #e9b65a;
 }
 .form-input {
    display: inline-block;
    width: 100%;
    border-width: 0;
-   background-color: var(--color-neutral-light);
+   background-color:#efeeec;
    font: inherit;
    padding: 0.5em 1em;
    margin: 0;
