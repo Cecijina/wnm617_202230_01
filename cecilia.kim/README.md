@@ -4,7 +4,7 @@
 
 ## Important Links
 
-- http://ceciliak.com/aau/wnm617/cecilia.kim/index.html
+- http://ceciliak.com/aau/wnm617/cecilia.kim/
 
 ## Side Assignments Links
 
