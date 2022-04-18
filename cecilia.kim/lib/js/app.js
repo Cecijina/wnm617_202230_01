@@ -36,7 +36,7 @@ $(() => {
       try {
          e.preventDefault();
          sessionStorage.animalId = $(this).data('id');
-         $.mobile.navigate("#animal-profile-page");
+         // $.mobile.navigate("#animal-profile-page");
       } catch(e) {
          throw("No id detected");
       }
