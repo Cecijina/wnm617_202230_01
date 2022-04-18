@@ -24,94 +24,93 @@
 <body>
 
 	<!-- Signin page-->
-	<section data-role="page" id="signin-page">
-		<div data-role="main" class="display-flex flex-column">
-			<div class="flex-stretch" style="background-image: url(lib/img/login.png);"></div>
-		</div> 
-		<form id="signin-form" class="form" data-ajax="false">
-			<div class="form-control">
-				<label for="signin-username" class="form-label">Username</label>
-				<input type="text" id="signin-username" data-role="none" class="form-input" placeholder="Type your Username">
-			</div>
-			<div class="form-control">
-				<label for="signin-password" class="form-label">Password</label>
-				<input type="password" id="signin-password" data-role="none" class="form-input" placeholder="Type your Password">
-			</div>
-			<!-- <input type="submit" data-role="none"> -->
-			<div class="form-control">
-				<button type="submit" class="form-button" data-role="none">Sign In</button>
-			</div>
-			<div class="form-control" style="text-align:center;font-size:0.8em;">
-				<p>If you don't have an account yet, <a href="#signup-page">Sign Up</a></p>
-			</div>
-		</form>
-	</div>
-</section>
+   <section data-role="page" id="signin-page">
+      <div data-role="main" class="display-flex flex-column">
+         <div class="flex-stretch" style="background-image: url(lib/img/login.png);"></div>    
+<!--          <div style="text-align:center;margin-bottom:10vmin">
+            <img src="img/icons/dice.svg" alt="" style="width:50vmin;height:50vmin"> -->
+         </div>
+         <form id="signin-form" class="form" data-ajax="false">
+            <div class="form-control">
+               <label for="signin-username" class="form-label">Username</label>
+               <input type="text" id="signin-username" data-role="none" class="form-input" placeholder="Type your Username">
+            </div>
+            <div class="form-control">
+               <label for="signin-password" class="form-label">Password</label>
+               <input type="password" id="signin-password" data-role="none" class="form-input" placeholder="Type your Password">
+            </div>
+            <!-- <input type="submit" data-role="none"> -->
+            <div class="form-control">
+               <button type="submit" class="form-button" data-role="none">Sign In</button>
+            </div>
+            <div class="form-control" style="text-align:center;font-size:0.8em;">
+				    <p>If you don't have an account yet, <a href="#signup-page">Sign Up</a></p>
+            </div>
+         </form>
+      </div>
+   </section>
 
-<section data-role="page" id="signup-page">
-	<div data-role="main" class="display-flex flex-column">
-		<div class="flex-stretch" style="background-image: url(lib/img/signup.png);"></div>
-		<form id="signup-form" class="form" data-ajax="false">
-			<div class="form-control">
-				<label for="signup-username" class="form-label">Username</label>
-				<input type="text" id="signup-username" data-role="none" class="form-input" placeholder="Type your Username">
-			</div>
-			<div class="form-control">
-				<label for="signup-password" class="form-label">Password</label>
-				<input type="password" id="signup-password" data-role="none" class="form-input" placeholder="Type your Password">
-			</div>
-			<div class="form-control">
-				<label for="signup-password2" class="form-label">Confirm Password</label>
-				<input type="password" id="signup-password2" data-role="none" class="form-input" placeholder="Type your Password again">
-			</div>
-			<!-- <input type="submit" data-role="none"> -->
-			<div class="form-control">
-				<!-- <button type="button" class="form-button">Submit</button> -->
-				<a href="#recent-page" class="form-button">Sign Up</a>
-			</div>
-			<div class="form-control" style="text-align:center;font-size:0.8em;">
-				<p>Already have an account? <a href="#signin-page">Sign In</a></p>
-			</div>
-		</form>
-		<div class="flex-stretch"></div>
-	</div>
-</section>
-
-
+   <section data-role="page" id="signup-page">
+      <div data-role="main" class="display-flex flex-column">
+         <div class="flex-stretch" style="background-image: url(lib/img/signup.png);"></div>
+         <form id="signup-form" class="form" data-ajax="false">
+            <div class="form-control">
+               <label for="signup-username" class="form-label">Username</label>
+               <input type="text" id="signup-username" data-role="none" class="form-input" placeholder="Type your Username">
+            </div>
+            <div class="form-control">
+               <label for="signup-password" class="form-label">Password</label>
+               <input type="password" id="signup-password" data-role="none" class="form-input" placeholder="Type your Password">
+            </div>
+            <div class="form-control">
+               <label for="signup-password2" class="form-label">Confirm Password</label>
+               <input type="password" id="signup-password2" data-role="none" class="form-input" placeholder="Type your Password again">
+            </div>
+            <!-- <input type="submit" data-role="none"> -->
+            <div class="form-control">
+               <!-- <button type="button" class="form-button">Submit</button> -->
+               <a href="#recent-page" class="form-button">Sign Up</a>
+            </div>
+            <div class="form-control" style="text-align:center;font-size:0.8em;">
+               <p>Already have an account? <a href="#signin-page">Sign In</a></p>
+            </div>
+         </form>
+         <div class="flex-stretch"></div>
+      </div>
+   </section>
 
 <!-- Map/recent page-->
-<section data-role="page" id="recent-page">
-	<div data-role="main" class="map-placeholder">
-		<img src="lib/img/icons/pin.png" alt="pin-dog" style="width:30px; height: 30px; margin-left:70px; margin-top:140px;">
-		<img src="lib/img/icons/pin.png" alt="pin-dog" style="width:30px; height: 30px; margin-left:70px; margin-top:140px;">
-		<img src="lib/img/icons/pin.png" alt="pin-dog" style="width:30px; height: 30px; margin-left:70px; margin-top:140px;">
-		<img src="lib/img/icons/pin.png" alt="pin-dog" style="width:30px; height: 30px; margin-left:70px; margin-top:140px;">
-	</div>
+   <section data-role="page" id="recent-page">
+      <div data-role="main" class="map-placeholder">
+		   <img src="lib/img/dog1.png" alt="pin-dog" style="width:30px; height: 30px; margin-left:70px; margin-top:50px;">
+		   <img src="lib/img/dog2.png" alt="pin-dog" style="width:30px; height: 30px; margin-left:30px; margin-top:100px;">
+		   <img src="lib/img/dog3.png" alt="pin-dog" style="width:30px; height: 30px; margin-left:70px; margin-top:90px;">
+		   <img src="lib/img/dog4.png" alt="pin-dog" style="width:30px; height: 30px; margin-left:40px; margin-top:70px;">
+		   <img src="lib/img/dog5.png" alt="pin-dog" style="width:30px; height: 30px; margin-left:50px; margin-top:120px;">
+	  </div>
+  
+	  <footer data-role="footer" data-template="#footer-template"></footer>
 
-	<footer data-role="footer" data-template="#footer-template"></footer>
-</section>
+   </section>
+
+   <!-- Animals list page-->
 
 
-
-<!-- Animals list page-->
-
-
-<section data-role="page" id="list-page">
-	<header data-role="header">
-		<h1>Your dog List</h1>
-		<ul>
-			<li class="flex-stretch"></li>
-		</ul>
-	</header>
-	<div data-role="main">
-		<!-- ul>li*10>a[href=#animal-profile-page]>{Animal $} -->
-		<ul class="animal-list">
-			<!-- li.animal-list-item*10>a[href=#animal-profile-page]>(div.animal-list-image>img[src='https://via.placeholder.com/400x400/?text=Animal$'])+div.animal-list-body>(div.animal-list-name>{Animal $})+(div.animal-list-type>{Type})+(div.animal-list-breed>{Breed}) -->
+   <section data-role="page" id="list-page">
+      <header data-role="header">
+         <h1>Your dog List</h1>
+         <ul>
+            <li class="flex-stretch"></li>
+         </ul>
+      </header>
+      <div data-role="main">
+         <ul class="animal-list">
+         				<!-- li.animal-list-item*10>a[href=#animal-profile-page]>(div.animal-list-image>img[src='https://via.placeholder.com/400x400/?text=Animal$'])+div.animal-list-body>(div.animal-list-name>{Animal $})+(div.animal-list-type>{Type})+(div.animal-list-breed>{Breed}) -->
 			<li class="animal-list-item">
 				<a href="#animal-profile-page">
 					<div class="animal-list-image"><img src="lib/img/dog1.png" alt=""></div>
 					<div class="animal-list-body">
-						<div class="animal-list-name">Dog 1</div>
+						<div class="animal-list-name">Ricky</div>
 						<br>
 						<div class="animal-list-view">View detail</div>
 					</div>
@@ -121,7 +120,7 @@
 				<a href="#animal-profile-page">
 					<div class="animal-list-image"><img src="lib/img/dog2.png" alt=""></div>
 					<div class="animal-list-body">
-						<div class="animal-list-name">Dog 2</div>
+						<div class="animal-list-name">Boba</div>
 						<br>
 						<div class="animal-list-view">View detail</div>
 					</div>
@@ -131,7 +130,7 @@
 				<a href="#animal-profile-page">
 					<div class="animal-list-image"><img src="lib/img/dog3.png" alt=""></div>
 					<div class="animal-list-body">
-						<div class="animal-list-name">Dog 3</div>
+						<div class="animal-list-name">Milk</div>
 						<br>
 						<div class="animal-list-view">View detail</div>
 					</div>
@@ -141,7 +140,7 @@
 				<a href="#animal-profile-page">
 					<div class="animal-list-image"><img src="lib/img/dog4.png" alt=""></div>
 					<div class="animal-list-body">
-						<div class="animal-list-name">Dog 4</div>
+						<div class="animal-list-name">Avocado</div>
 						<br>
 						<div class="animal-list-view">View detail</div>
 
@@ -152,16 +151,14 @@
 				<a href="#animal-profile-page">
 					<div class="animal-list-image"><img src="lib/img/dog5.png" alt=""></div>
 					<div class="animal-list-body">
-						<div class="animal-list-name">Dog 5</div>
+						<div class="animal-list-name">Matcha</div>
 						<br>
 						<div class="animal-list-view">View detail</div>
 
 					</div>
 				</a>
 			</li>
-
 		</ul>
-
 		<div class="floater bottom right circle-button" data-activate="#list-add-animal-modal">&plus;</div>
 	</div>
 	<footer data-role="footer" data-template="#footer-template"></footer>
@@ -184,8 +181,8 @@
 					<input type="text" class="form-input" placeholder="Type a size" data-role="none" id="list-add-animal-size">
 				</div>
 				<div class="form-control">
-					<label for="#list-add-animal-description" class="form-label">Location</label>
-					<input type="text" class="form-input" placeholder="Type a location" data-role="none" id="list-add-animal-location">
+					<label for="#list-add-animal-description" class="form-label">Breed</label>
+					<input type="text" class="form-input" placeholder="Type a Breed" data-role="none" id="list-add-animal-location">
 				</div>
                <!-- <p>Nostrum quos delectus blanditiis aperiam! Fuga excepturi, quibusdam, asperiores quis culpa vel ipsum, voluptatem quas officiis a rem nesciunt voluptatum accusamus deserunt consequuntur similique delectus dicta, quod odio. Laboriosam incidunt exercitationem ipsa necessitatibus enim neque. Quisquam totam rerum quia, nobis deleniti quae, delectus hic. Consectetur laudantium quis sunt aperiam hic quidem, velit dolores praesentium sapiente. Non, architecto, quas. Eaque, modi.</p>
                <div class="display-flex">
@@ -202,23 +199,31 @@
 
 
 
-
    <!-- Animal profile page-->
-
-
    <section data-role="page" id="animal-profile-page">
-   	<header data-role="header">
-   		<h1>Dog 1's Profile</h1>
-   		<ul>
-   			<li><a href="#" data-rel="back">Back</a></li>
-   			<li class="flex-stretch"></li>
-   			<li><a href="#animal-edit-page">Edit</a></li>
-   		</ul>
-   	</header>
-
-   	<div data-role="main" class="display-flex flex-column" style="overflow: auto;">
-
-   		<form class="dog-page">
+      <header data-role="header">
+         <h1>Ricky's Profile</h1>
+         <ul>
+            <li><a href="#" data-rel="back">Back</a></li>
+            <li class="flex-stretch"></li>
+            <li><a href="#animal-edit-page">Edit</a></li>
+         </ul>
+      </header>
+      <div data-role="main" class="display-flex flex-column" style="overflow: auto;">
+      	<div data-role="main">
+         <div class="animal-profile-top">
+         </div>
+         <div class="animal-profile-nav">
+            <div class="active">Map</div>
+            <div>Description</div>
+         </div>
+         <div class="animal-profile-bottom">
+            <div class="animal-profile-map active">
+               <div class="map map-placeholder"></div>
+            </div>
+            <div class="animal-profile-description"></div>
+         </div>
+         <form class="dog-page">
    			<p class="title-dog">Name</p>
    			<p class="info-dog">Richy</p>
 
@@ -228,20 +233,20 @@
    			<p class="title-dog">Size</p>
    			<p class="info-dog">M (26 -60lb)</p>
 
-   			<p class="title-dog">Location</p>
-   			<p class="info-dog">San Francisco</p>	
+   			<p class="title-dog">Breed</p>
+   			<p class="info-dog">Chicken</p>	
 
    		</form>	
    	</div>
 
    	<footer data-role="footer" data-template="#footer-template"></footer>
    </section>
-
+  
 
    <!-- Animal Edit Profile -->
    <section data-role="page" id="animal-edit-page">
    	<header data-role="header">
-   		<h1>Edit Profile</h1>
+   		<h1>Edit your dog's profile</h1>
    		<ul>
    			<li><a href="#" data-rel="back">Back</a></li>
    			<li class="flex-stretch"></li>
@@ -254,121 +259,117 @@
    	<form id="edit-animal-form" class="form">
    		<div class="form-control">
    			<label for="edit-dog-page" class="form-label">Name</label>
-   			<input type="text" id="edit--dog-name" data-role="none" class="form-input" placeholder="Type a name">
+   			<input type="text" id="edit--dog-name" data-role="none" class="form-input" placeholder="Richy">
    		</div>
    		<div class="form-control">
    			<label for="edit-dog-age-page" class="form-label">Age</label>
-   			<input type="text" id="edit-dog-age" data-role="none" class="form-input" placeholder="Type an age">
+   			<input type="text" id="edit-dog-age" data-role="none" class="form-input" placeholder="5 years old">
    		</div>
 
    		<div class="form-control">
    			<label for="edit-spay-neuter-page" class="form-label">Size</label>
-   			<input type="text" id="edit-size" data-role="none" class="form-input" placeholder="Type a size">
+   			<input type="text" id="edit-size" data-role="none" class="form-input" placeholder="M (26 -60lb)">
    		</div>
 
    		<div class="form-control">
-   			<label for="edit-dog-location-page" class="form-label">Location</label>
-   			<input type="text" id="edit-dog-location" data-role="none" class="form-input" placeholder="Type a location">
+   			<label for="edit-dog-location-page" class="form-label">Breed</label>
+   			<input type="text" id="edit-dog-location" data-role="none" class="form-input" placeholder="Chicken">
    		</div>
 
    	</form>
-   </div>
+      </div>
 
-   <footer data-role="footer" data-template="#footer-template"></footer>
-</section>
-
-
+      <footer data-role="footer" data-template="#footer-template"></footer>
+   </section>
 
 
-<!-- User page-->
-<section data-role="page" id="user-profile-page">
+   <!-- User page-->
 
-	<div data-role="main" class="display-flex flex-column"> 
-		<div class="flex-stretch"></div>
-		<div style="text-align:center;margin-bottom:10vmin">
-			<div class="profile-name" style="margin-top: 15px;">Micheal Atkison</div>
-			<div class="edit-profile"><a href="#user-edit-page" style="text-align: center">Edit Profile</a></div>
+   <section data-role="page" id="user-profile-page">
+      <div data-role="main" class="display-flex flex-column" >
+      	<div class="flex-stretch"></div>
+		   <div style="text-align:center;margin-bottom:10vmin">
+<!-- 			    <div class="profile-name" style="margin-top: 15px;">Micheal Atkison</div> -->
+			    <div class="edit-profile"><a href="#user-edit-page" style="text-align: center">Edit Profile</a></div>
 
 		</div>
 
-		<form class="user-page">
+		 <form class="user-page">
 
-			<p class="title-user">User name</p>
-			<p class="user-info">Micheal Atkison</p>
+			 <p class="title-user">User name</p>
+			 <p class="user-info">Micheal Atkison</p>
 			
 			
-			<p class="title-user">Age</p>
-			<p class="user-info">45</p>
+			 <p class="title-user">Age</p>
+			 <p class="user-info">45</p>
 
-			<p class="title-user">Gender</p>
-			<p class="user-info">Male</p>
+			 <p class="title-user">Gender</p>
+			 <p class="user-info">Male</p>
 
-			<p class="title-user">Location</p>
-			<p class="user-info">San Francisco</p>
+			 <p class="title-user">Location</p>
+			 <p class="user-info">San Francisco,CA</p>
 
-			<a href="#" class="js-logout">Logout</a>		
+			 <a href="#" class="js-logout">Logout</a>		
 		</form>
 
 		<div class="flex-stretch"></div> 
-	</div>
+	   </div>
 
-	<footer data-role="footer" data-template="#footer-template"></footer>
-</section>
+	   <footer data-role="footer" data-template="#footer-template"></footer>
+   </section>
 
 
 <!-- User Edit page-->
 
-<section data-role="page" id="user-edit-page">
-	<header data-role="header">
-		<h1>Edit your profile</h1>
-		<ul>
-			<li><a href="#" data-rel="back">Back</a></li>
-			<li class="flex-stretch"></li>
-			<li><a href="#list-page">Save</a></li>
-		</ul>
+   <section data-role="page" id="user-edit-page">
+      <header data-role="header">
+         <h1>Edit your porfile</h1>
+         <ul>
+            <li><a href="#" data-rel="back">Back</a></li>
+            <li class="flex-stretch"></li>
+            <li><a href="#user-profile-page">Save</a></li>
+         </ul>
+      </header>
 
-	</header>
-
-	<div data-role="main" class="display-flex flex-column">
-		<div class="flex-stretch"></div>
-		<div style="text-align:center;margin-bottom:20vmin">
+      <div data-role="main" class="display-flex flex-column">
+      	<div class="flex-stretch"></div>
+		   <div style="text-align:center;margin-bottom:20vmin">
 
 		</div>
 
 		<form id="edit-name-form" class="form">
 			<div class="form-control">
 				<label for="edit-username-page" class="form-label">Username</label>
-				<input type="text" id="edit-username" data-role="none" class="form-input" placeholder="Type your name">
+				<input type="text" id="edit-username" data-role="none" class="form-input" placeholder="Micheal Atkison">
 			</div>
 
 
 			<div class="form-control">
 				<label for="edit-email-page" class="form-label">Age</label>
-				<input type="text" id="edit-email" data-role="none" class="form-input" placeholder="Type your age">
+				<input type="text" id="edit-email" data-role="none" class="form-input" placeholder="45">
 			</div>
 			
 			<div class="form-control">
 				<label for="edit-password-page" class="form-label">Gender</label>
-				<input type="text" id="edit-password" data-role="none" class="form-input" placeholder="Type your gender">
+				<input type="text" id="edit-password" data-role="none" class="form-input" placeholder="Male">
 			</div>
 
 
 			<div class="form-control">
-				<label for="edit-location-page" class="form-label">Location</label>
-				<input type="text" id="edit-location" data-role="none" class="form-input" placeholder="Type your location">
+				<label for="edit-location-page" class="form-label">location</label>
+				<input type="text" id="edit-location" data-role="none" class="form-input" placeholder="San Francisco,CA">
 			</div>
-		</form>
+		 </form>
 
-		<div class="flex-stretch"></div>
-	</div>
-	
+		 <div class="flex-stretch"></div>
+
+	    <footer data-role="footer" data-template="#footer-template"></footer>
+<!--        <a href="#" class="js-logout">Logout</a> -->
+       </div>
+   </section>
 
 
-	<footer data-role="footer" data-template="#footer-template"></footer>
-</section>
-
-
-<!-- foooter page-->
+ <!-- foooter page-->
 
 
 <script type="text/template" id="footer-template">
