@@ -190,7 +190,6 @@ a:hover {
 
 
 
-
 /* Modals */
 .modal {
    position: absolute;
@@ -279,8 +278,6 @@ a:hover {
 }
 
 
-
-
 /* floater */
 .floater { position: absolute; }
 .floater.top { top:1rem }
@@ -301,8 +298,6 @@ a:hover {
 }
 
 
-
-
 .map {
    position: absolute;
    top: 0;
@@ -316,13 +311,10 @@ a:hover {
    background-size: cover;
 }
 .icon {
-   width: 2rem;
-   height: 2rem;
+   width: 1.5rem;
+   height: 1.5rem;
    vertical-align: middle;
 }
-
-
-
 
 
 /* Animal List */
@@ -441,7 +433,7 @@ a:hover {
 }
 .nav-icon .icon {
     vertical-align: middle;
-    width: 1.5em;
+/*    width: 1.5em;*/
 }
 .nav-icon-label {
     line-height: 1rem;
@@ -502,7 +494,6 @@ a:hover {
 .user-page{
    padding: 1em;
 }
-
 
 .js-logout {
    font-size: larger;
