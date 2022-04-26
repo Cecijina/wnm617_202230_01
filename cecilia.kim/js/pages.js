@@ -1,6 +1,20 @@
-
-
 const RecentPage = async() => {
+
+
+   let {result} = await query({
+      type:'recent_animal_locations',
+      params:[sessionStorage.userId]
+   });
+   console.log(result);
+
+   let valid_animals = result.reduce((r,o)=>{
+      o.icon = o.img;
+      if(o.lat && o.lng) r.push(o);
+      return r;
+   },[]);
+
+   let map_el = await makeMap("#recent-page .map");
+   makeMarkers(map_el,valid_animals)
 }
 
 
@@ -35,6 +49,8 @@ const AnimalProfilePage = async() => {
       type:'animal_by_id',
       params:[sessionStorage.animalId]
    })
+
+
    let [animal] = animals;
    $(".animal-profile-top").css({"background-image":`url(${animal.img})`})
    $("#animal-profile-page h1").html(animal.name)
@@ -46,3 +62,10 @@ const AnimalProfilePage = async() => {
    })
    console.log(locations)
 }
+
+
+
+
+
+
+   
