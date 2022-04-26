@@ -18,6 +18,9 @@ const RecentPage = async() => {
 }
 
 
+
+
+
 const ListPage = async() => {
    // destructuring
    let {result:animals} = await query({

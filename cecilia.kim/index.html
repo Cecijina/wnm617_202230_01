@@ -17,8 +17,13 @@
 	<script src="js/functions.js"></script>
 	<script src="js/pages.js"></script>
 	<script src="js/parts.js"></script>
+	<script src="js/maps.js"></script>
 
 	<script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
+	<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBasJSL8rNpBf9Zk6__r4iVf7ZLMAnMSC4&callback=initMap&v=weekly"
+      defer
+    ></script>
 
 </head>
 <body>
@@ -81,7 +86,8 @@
 
 <!-- Map/recent page-->
    <section data-role="page" id="recent-page">
-      <div data-role="main" class="map-placeholder">
+      <div data-role="main">
+      	<div class="map"></div>
 		   <img src="lib/img/dog1.png" alt="pin-dog" style="width:30px; height: 30px; margin-left:70px; margin-top:50px;">
 		   <img src="lib/img/dog2.png" alt="pin-dog" style="width:30px; height: 30px; margin-left:30px; margin-top:100px;">
 		   <img src="lib/img/dog3.png" alt="pin-dog" style="width:30px; height: 30px; margin-left:70px; margin-top:90px;">
