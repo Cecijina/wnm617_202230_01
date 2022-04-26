@@ -14,7 +14,7 @@ const RecentPage = async() => {
    },[]);
 
    let map_el = await makeMap("#recent-page .map");
-   makeMarkers(map_el,valid_animals)
+   makeMarkers(map_el,result)
 }
 
 
@@ -64,6 +64,10 @@ const AnimalProfilePage = async() => {
       params:[sessionStorage.animalId]
    })
    console.log(locations)
+
+   let map_el = await makeMap("#animal-profile-page .map");
+   makeMarkers(map_el,locations)
+
 }
 
 
