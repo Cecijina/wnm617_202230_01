@@ -75,7 +75,7 @@ function makeStatement($data) {
 
 
 
-      case "recent_animal_locations":
+      case "result_animal_locations":
       return makeQuery($c,"SELECT *
          FROM `track_2022_animals` a
          JOIN (
