@@ -1,11 +1,13 @@
 
 const RecentPage = async() => {
 
-   let {result} = await query({
+   let {result,error} = await query({
       type:'result_animal_locations',
       params:[sessionStorage.userId]
    });
    console.log(result);
+
+   if(error) throw(error);
 
    let valid_animals = result.reduce((r,o)=>{
       o.icon = o.img;

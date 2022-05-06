@@ -96,6 +96,12 @@ function makeStatement($data) {
 
 
 
+      case "insert_animal":
+          return makeQuery($c,"INSERT INTO
+            
+            )
+
+
       case "check_signin":
       return makeQuery($c, "SELECT id from `track_2022_users` WHERE `username` = ? AND `password` = md5(?)", $p);
 
