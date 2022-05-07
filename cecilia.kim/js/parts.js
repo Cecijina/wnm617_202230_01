@@ -117,7 +117,7 @@ ${FormControlInput({
    placeholder:"Type a Username",
    value:user.username,
 })}
-${FormControlInput({
+${FormControlTextarea({
    namespace,
    name:"email",
    displayname:"Email",

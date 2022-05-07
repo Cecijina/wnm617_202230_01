@@ -26,8 +26,8 @@ const RecentPage = async() => {
          console.log(animal)
 
          // Just Navigate
-         // sessionStorage.animalId = animal.animal_id;
-         // $.mobile.navigate("#animal-profile-page");
+         sessionStorage.animalId = animal.animal_id;
+         $.mobile.navigate("#animal-profile-page");
 
 
          // Open Google InfoWindow
