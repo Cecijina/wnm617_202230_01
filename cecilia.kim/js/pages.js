@@ -40,7 +40,7 @@ const RecentPage = async() => {
          $("#map-drawer")
             .addClass("active")
             .find(".modal-body")
-            .html(makeAnimalPopupBody({...animal, id:animal.animal_id}))
+            .html(makeAnimalPopupBody({...valid_animals[i],id:valid_animals[i].animal_id}))
       })
    })
 }

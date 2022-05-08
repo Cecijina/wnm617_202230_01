@@ -1,6 +1,4 @@
 
-
-
 const submitAnimalAdd = async () => {
    let name = $("#animal-add-name").val();
    let type = $("#animal-add-type").val();
@@ -52,9 +50,6 @@ const submitDeleteAnimal = async () => {
 }
 
 
-
-
-
 const submitUserSignup = async () => {
    let username = $("#signup-username").val();
    let email = $("#signup-email").val();
@@ -95,8 +90,7 @@ const submitUserEdit = async () => {
 
    history.go(-1);
 }
-
-
+ 
 
 
 const submitLocationAdd = async () => {
