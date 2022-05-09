@@ -39,7 +39,6 @@ $(() => {
 
 
 
-
    // FORM SUBMISSION CLICKS
    .on("click", ".js-submit-animal-add", function() {
       submitAnimalAdd();
