@@ -9,14 +9,14 @@
    --font-sans: Helvetica, Arial, sans-serif;
    --font-serif: Cambria, Georgia, serif;
 
-   --color-neutral-lighter: #f4f4f4;
-   --color-neutral-light: #eee;
-   --color-neutral-medium: #999;
-   --color-neutral-dark: #444;
+   --color-neutral-lighter: #f9de8d;
+   --color-neutral-light: #f9de8d;
+   --color-neutral-medium: #f3d07f;
+   --color-neutral-dark: #e9b65a;
 
-   --color-main-light: #f6bed9;
-   --color-main-medium: #e0609d;
-   --color-main-dark: #65163c;
+   --color-main-light: #f9de8d;
+   --color-main-medium: #f3d07f;
+   --color-main-dark: #e9b65a;
 
    --header-height: 3rem;
 }
@@ -145,7 +145,7 @@ a:hover {
    height: var(--header-height);
    line-height: var(--header-height);
    border-width: 0;
-   background-color: white;
+   background-color: #e0609d;
    box-shadow: 0 0 5px rgba(0,0,0,0.15);
 
    position: relative;
