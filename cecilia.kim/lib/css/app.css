@@ -5,17 +5,18 @@
    box-sizing: border-box;
 }
 
-
 :root {
-    font-family: 'Noto Sans', sans-serif;
-   --color-neutral-lighter: #ffff;
-   --color-neutral-light: #efeeec;
-   --color-neutral-medium: #ffff;
-   --color-neutral-dark: #4e4e4e;
+   --font-sans: Helvetica, Arial, sans-serif;
+   --font-serif: Cambria, Georgia, serif;
 
-   --color-main-light: #f9de8d;
-   --color-main-medium:#f3d07f;
-   --color-main-dark: #e9b65a;
+   --color-neutral-lighter: #f4f4f4;
+   --color-neutral-light: #eee;
+   --color-neutral-medium: #999;
+   --color-neutral-dark: #444;
+
+   --color-main-light: #f6bed9;
+   --color-main-medium: #e0609d;
+   --color-main-dark: #65163c;
 
    --header-height: 3rem;
 }
@@ -32,7 +33,6 @@ h3,
 h4 {
    font-size: 1em;
    font-family: var(--font-sans);
-   font-weight: bold;
 }
 
 a {
@@ -44,15 +44,6 @@ a:hover {
    text-decoration: underline;
 }
 
-#signin-page{
-   background-image: url(../img/login.png);
-   background-size: cover;
-}
-
-#signup-page{
-   background-image: url(../img/signup.png);
-   background-size: cover;
-}
 
 
 /* Forms */
@@ -62,7 +53,7 @@ a:hover {
 }
 .ui-mobile .form-label {
    font-size: 0.8em;
-   color: var(--color-main-dark);
+   color: var(--color-neutral-medium);
    margin: 0.5rem 0;
 }
 .form-input {
@@ -111,23 +102,24 @@ a:hover {
 
 
 
-#signin-form,
-#signup-form,
 
-#add-dog-form,
-#edit-animal-form,
-#edit-name-form,
-#dog-page-form{
+#signin-form,
+#signup-form {
    padding: 1em;
 }
-
 #recent-search {
    box-shadow: 0.1em 0.2em 0.4em rgba(0,0,0,0.3);
 }
+
+
+
+
 .recent-search {
    margin: 1em;
    display: flex;
+   position: relative;
 }
+
 
 
 /* Page Layouts */
@@ -190,6 +182,7 @@ a:hover {
 
 
 
+
 /* Modals */
 .modal {
    position: absolute;
@@ -204,7 +197,6 @@ a:hover {
 }
 .modal.active {
    opacity: 1;
-   pointer-events: initial;
 }
 .modal-back {
    position: absolute;
@@ -213,6 +205,9 @@ a:hover {
    width: 100%;
    height: 100%;
    background-color: rgba(0,0,0,0.7);
+}
+.modal.active .modal-back {
+   pointer-events: initial;
 }
 .modal-back.transparent {
    background-color: transparent;
@@ -236,6 +231,7 @@ a:hover {
 }
 .modal.active .modal-popup {
    transform: translate(-50%, -50%);
+   pointer-events: initial;
 }
 .modal-head,
 .modal-foot {
@@ -275,7 +271,10 @@ a:hover {
 
 .modal.active .modal-drawer {
    transform: translate(0);
+   pointer-events: initial;
 }
+
+
 
 
 /* floater */
@@ -298,6 +297,8 @@ a:hover {
 }
 
 
+
+
 .map {
    position: absolute;
    top: 0;
@@ -311,10 +312,13 @@ a:hover {
    background-size: cover;
 }
 .icon {
-   width: 1.5rem;
-   height: 1.5rem;
+   width: 2rem;
+   height: 2rem;
    vertical-align: middle;
 }
+
+
+
 
 
 /* Animal List */
@@ -350,33 +354,6 @@ a:hover {
    font-size: 1.3em;
 }
 
-/* dog add, dog edit*/
-.photo-profiles{
-   text-align:center;
-   margin-top:10vmin;
-   margin-bottom:5vmin;
-}
-
-.title-dog {
-   font-size: 0.8em;
-   color: var(--color-main-dark);
-   margin: 0.5rem 0;
-   font-weight: 300;
-   letter-spacing: 1px;
-   
-}
-.info-dog {
-   font-weight: 400;
-   font-size: 1em;
-   padding-bottom: 10px;
-   border-bottom: 1px solid  var(--color-middle-light) ;
-}
-
-.dog-page {
-   padding: 1em;
-}
-
-
 
 
 #animal-profile-page [data-role="main"] {
@@ -393,6 +370,7 @@ a:hover {
 }
 .animal-profile-top {
     height: 40vh;
+    position: relative;
 }
 .animal-profile-bottom {
    flex: 1 1 auto;
@@ -407,7 +385,7 @@ a:hover {
    text-align: center;
    flex: 1 1 auto;
 }
-.animal-profile-bottom div {
+.animal-profile-bottom>div {
    opacity: 0;
    pointer-events: none;
    transition: all 0.3s;
@@ -419,6 +397,7 @@ a:hover {
 }
 .animal-profile-bottom div.active {
    opacity: 1;
+   pointer-events: initial;
 }
 
 
@@ -433,13 +412,14 @@ a:hover {
 }
 .nav-icon .icon {
     vertical-align: middle;
-/*    width: 1.5em;*/
+    width: 1.5em;
 }
 .nav-icon-label {
     line-height: 1rem;
     display: block;
     font-size: 0.8em;
 }
+
 
 
 
@@ -463,43 +443,8 @@ a:hover {
 .overscroll { overflow:auto; }
 
 
-
-/*User*/
-.title-user {
-   font-weight: 300;
-   color:  var(--color-main-dark);
-   font-size: .8em;
-   letter-spacing: 1px;
-   
+.fill-parent {
+   height: 100%;
+   width: 100%;
 }
-.user-info {
-   font-weight: 400;
-   font-size: 1em;
-   padding-bottom: 10px;
-   border-bottom: 1px solid  var(--color-main-dark) ;
-}
-
-/*.profile-name {
-   font-family:'Noto Sans', sans-serif;
-   font-weight: 200;
-   font-size: 1em;
-   letter-spacing: 1px;
-   color: var(--color-neutral-dark);
-}*/
-
-.edit-profile{
-   color: #f3d07f;
-}
-
-.user-page{
-   padding: 1em;
-}
-
-.js-logout {
-   font-size: larger;
-   color: #e9b65a;
-   font-weight: bold;
-   text-align: center;  
-   color: var(--color-neutral-dark);
-}
-
+.noclick-children * { pointer-events:none; }
