@@ -19,6 +19,7 @@ $(() => {
          case "animal-profile-page": AnimalProfilePage(); break;
          case "animal-edit-page": AnimalEditPage(); break;
          case "animal-add-page": AnimalAddPage(); break;
+         case "animal-location-page": AnimaalLocationPage(); break;
 
          case "choose-location-page": ChooseLocationPage(); break;
       }
