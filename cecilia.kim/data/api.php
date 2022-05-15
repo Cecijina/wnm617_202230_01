@@ -47,6 +47,22 @@ function makeQuery($c,$ps,$p,$makeResults=true) {
 }
 
 
+
+function makeUpload($file,$folder) {
+   $filename = microtime(true) . "_" . $_FILES[$file]['name'];
+
+   if(@move_uploaded_file(
+      $_FILES[$file]['tmp_name'],
+      $folder.$filename
+   )) return ["result"=>$filename];
+   else return [
+      "error"=>"File Upload Failed",
+      "filename"=>$filename
+   ];
+}
+
+
+
 function makeStatement($data) {
    $c = makeConn();
    $t = $data->type;
@@ -208,6 +224,12 @@ function makeStatement($data) {
 "SELECT * FROM track_2022_users WHERE id = ?",
 "SELECT * FROM track_2022_animals WHERE user_id = ?",
 */
+
+
+if(!empty($_FILES)) {
+   $r = makeUpload("image","../uploads/");
+   die(json_encode($r));
+}
 
 $data = json_decode(file_get_contents("php://input"));
 
