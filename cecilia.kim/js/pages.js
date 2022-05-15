@@ -26,8 +26,8 @@ const RecentPage = async() => {
          console.log(animal)
 
          // Just Navigate
-         sessionStorage.animalId = animal.animal_id;
-         $.mobile.navigate("#animal-profile-page");
+         // sessionStorage.animalId = animal.animal_id;
+         // $.mobile.navigate("#animal-profile-page");
 
 
          // Open Google InfoWindow
@@ -55,8 +55,12 @@ const ListPage = async() => {
    
    console.log(animals)
 
-   $("#list-page .animal-list").html(makeAnimalList(animals));
+   makeAnimalListSet(animals);
 }
+
+
+
+
 
 
 const UserProfilePage = async() => {
@@ -70,8 +74,6 @@ const UserProfilePage = async() => {
 
    $("#user-profile-page [data-role='main']").html(makeUserProfilePage(user));
 }
-
-
 const UserEditPage = async() => {
    let {result:users} = await query({
       type:'user_by_id',
@@ -81,7 +83,6 @@ const UserEditPage = async() => {
 
    $("#user-edit-form").html(makeUserForm(user,"user-edit"))
 }
-
 const UserEditPhotoPage = async () => {
    let {result:users} = await query({
       type:'user_by_id',
@@ -93,6 +94,11 @@ const UserEditPhotoPage = async () => {
       "background-image":`url(${user.img})`
    })
 }
+
+
+
+
+
 
 
 
@@ -126,7 +132,6 @@ const AnimalEditPage = async() => {
 
    $("#animal-edit-form").html(makeAnimalForm(animal,"animal-edit"))
 }
-
 const AnimalAddPage = async() => {
    let {result:animals} = await query({
       type:'animal_by_id',
@@ -136,7 +141,6 @@ const AnimalAddPage = async() => {
 
    $("#animal-add-form").html(makeAnimalForm({},"animal-add"))
 }
-
 const AnimalEditPhotoPage = async () => {
    let {result:animals} = await query({
       type:'animal_by_id',
@@ -151,6 +155,11 @@ const AnimalEditPhotoPage = async () => {
 
 
 
+
+
+
+
+
 const ChooseLocationPage = async () => {
    let map_el = await makeMap("#choose-location-page .map");
 
@@ -161,4 +170,3 @@ const ChooseLocationPage = async () => {
       makeMarkers(map_el,[e.latLng])
    })
 }
-
