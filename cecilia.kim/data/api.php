@@ -150,7 +150,7 @@ function makeStatement($data) {
       case "search_animals":
          $p = ["%$p[0]%", $p[1]];
          return makeQuery($c,"SELECT *
-            FROM `track_202230_animals`
+            FROM `track_2022_animals`
             WHERE
                `name` LIKE ? AND
                `user_id` = ?
@@ -158,7 +158,7 @@ function makeStatement($data) {
 
       case "filter_animals":
          return makeQuery($c,"SELECT *
-            FROM `track_202230_animals`
+            FROM `track_2022_animals`
             WHERE
                `$p[0]` = ? AND
                 `user_id` = ?
