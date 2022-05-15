@@ -197,6 +197,29 @@ function makeStatement($data) {
 
 
 
+      /* UPLOAD */
+
+      case "update_user_image":
+         $r = makeQuery($c,"UPDATE
+            `track_2022_users`
+            SET `img` = ?
+            WHERE `id` = ?
+            ",$p,false);
+         if(isset($r['error'])) return $r;
+         return ["result"=>"Success"];
+
+      case "update_animal_image":
+         $r = makeQuery($c,"UPDATE
+            `track_2022_animals`
+            SET `img` = ?
+            WHERE `id` = ?
+            ",$p,false);
+         if(isset($r['error'])) return $r;
+         return ["result"=>"Success"];
+
+
+
+
       /* DELETE */
 
       case "delete_animal":

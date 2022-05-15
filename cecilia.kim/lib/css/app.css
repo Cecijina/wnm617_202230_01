@@ -321,6 +321,43 @@ a:hover {
 
 
 
+/* User Profile */
+
+.user-profile-head {
+   position: relative;
+}
+.user-profile-head>img {
+   width: 100%;
+   height: 40vh;
+   object-fit: cover;
+   object-position: center;
+}
+.user-profile-body {
+   padding: 1em;
+}
+
+
+
+
+
+/* Image Picker */
+.imagepicker.replace {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-position: center;
+   background-size: contain;
+   background-repeat:  no-repeat;
+}
+.imagepicker.replace input {
+   display: none;
+}
+
+
+
+
 /* Animal List */
 .animal-list {
    list-style-type: none;
