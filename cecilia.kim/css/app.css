@@ -119,6 +119,29 @@ a:hover {
    display: flex;
    position: relative;
 }
+.search-bar {
+   z-index: 2;
+   padding: 0.2em 1em;
+   display: flex;
+}
+.search-bar.header {
+   box-shadow:none;
+}
+.search-bar .hotdog {
+   width: 100%;
+   color: black;
+}
+.filter-bar {
+   z-index: 1;
+   display: flex;
+   padding: 0 1em;
+   gap: 1em;
+   font-weight: bold;
+   width: 100%;
+}
+.filter-bar.header {
+   overflow: auto;
+}
 
 
 
