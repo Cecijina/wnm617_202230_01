@@ -3,10 +3,11 @@
 
 *, *::after, *::before {
    box-sizing: border-box;
+   border-radius: 30px;
 }
 
 :root {
-   --font-sans: Helvetica, Arial, sans-serif;
+   --font-sans: Roboto, sans-serif;
    --font-serif: Cambria, Georgia, serif;
 
    --color-neutral-lighter: #f9de8d;
@@ -70,6 +71,7 @@ a:hover {
    display: inline-block;
    width: 100%;
    border-width: 0;
+   border-radius: 30px;
    background-color: var(--color-neutral-light);
    font: inherit;
    padding: 0.5em 1em;
