@@ -408,6 +408,9 @@ a:hover {
 .animal-profile-top {
     height: 40vh;
     position: relative;
+    background-size: cover;
+    background-position: center;
+
 }
 .animal-profile-bottom {
    flex: 1 1 auto;

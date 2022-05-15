@@ -15,11 +15,14 @@ $(() => {
          
          case "user-profile-page": UserProfilePage(); break;
          case "user-edit-page": UserEditPage(); break;
+         case "user-edit-page": UserEditPhotoPage(); break;
          
          case "animal-profile-page": AnimalProfilePage(); break;
          case "animal-edit-page": AnimalEditPage(); break;
          case "animal-add-page": AnimalAddPage(); break;
          case "animal-location-page": AnimaalLocationPage(); break;
+         case "user-edit-page": AnimalEditPhotoPage(); break;
+
 
          case "choose-location-page": ChooseLocationPage(); break;
       }
@@ -76,6 +79,7 @@ $(() => {
          history.go(-1);
       })
    })
+   
    .on("click", ".js-submit-animal-upload", function(e) {
       let image = $("#animal-edit-photo-image").val();
       query({
