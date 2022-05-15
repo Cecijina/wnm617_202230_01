@@ -119,15 +119,16 @@
 
 
    <section data-role="page" id="list-page">
-      <header data-role="header">
-         <h1>My dog List</h1>
-         <ul>
-            <li class="flex-stretch"></li>
-         </ul>
-      </header>
       <div data-role="main">
-         <ul class="animal-list"></ul>
+         <div class="search-bar header flex-none">
+            <form data-ajax="false" id="list-search-form" class="hotdog dark">
+               <input type="search" data-role="none" placeholder="Search For An Animal">
+            </form>
+         </div>
+         <div class="filter-bar header flex-none">
+         </div>
 
+         <ul class="animal-list"></ul>
          <a href="#animal-add-page" class="floater bottom right circle-button">&plus;</a>
       </div>
       <footer data-role="footer" data-template="#footer-template"></footer>

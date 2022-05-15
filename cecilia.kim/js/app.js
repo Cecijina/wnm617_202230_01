@@ -40,6 +40,13 @@ $(() => {
       submitUserSignup();
    })
 
+   .on("submit", "#list-search-form", function(e) {
+      e.preventDefault();
+      let s = $(this).find("input").val();
+      checkSearchForm(s);
+   })
+
+
 
 
 

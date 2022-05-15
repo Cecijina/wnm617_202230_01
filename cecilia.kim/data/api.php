@@ -147,6 +147,26 @@ function makeStatement($data) {
          return ["id"=>$c->lastInsertId()];
 
 
+      case "search_animals":
+         $p = ["%$p[0]%", $p[1]];
+         return makeQuery($c,"SELECT *
+            FROM `track_202230_animals`
+            WHERE
+               `name` LIKE ? AND
+               `user_id` = ?
+            ",$p);
+
+      case "filter_animals":
+         return makeQuery($c,"SELECT *
+            FROM `track_202230_animals`
+            WHERE
+               `$p[0]` = ? AND
+                `user_id` = ?
+            ",[$p[1],$p[2]]);
+
+
+
+
 
       /* UPDATE */
 
