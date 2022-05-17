@@ -3,11 +3,12 @@
 
 *, *::after, *::before {
    box-sizing: border-box;
+   margin-top: 2px;
 }
 
 :root {
-   --font-sans: Roboto sans-serif;
-   --font-serif: Cambria, Georgia, serif;
+   --font-sans: Roboto, sans-serif;
+   --font-serif: Roboto,serif;
 
    --color-neutral-lighter: #f9de8d;
    --color-neutral-light: #f9de8d;
@@ -57,7 +58,7 @@ a:hover {
    margin: 0.5rem 0;
 }
 .form-input {
-   border-radius: 30px;
+   border-radius: 24px;
    display: inline-block;
    width: 100%;
    border-width: 0;
@@ -71,7 +72,7 @@ a:hover {
    display: inline-block;
    width: 100%;
    border-width: 0;
-   border-radius: 30px;
+   border-radius: 24px;
    background-color: var(--color-neutral-light);
    font: inherit;
    padding: 0.5em 1em;
