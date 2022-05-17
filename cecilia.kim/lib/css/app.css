@@ -3,7 +3,6 @@
 
 *, *::after, *::before {
    box-sizing: border-box;
-   margin-top: 2px;
 }
 
 :root {
@@ -58,7 +57,7 @@ a:hover {
    margin: 0.5rem 0;
 }
 .form-input {
-   border-radius: 24px;
+   border-radius: 20px;
    display: inline-block;
    width: 100%;
    border-width: 0;
@@ -72,7 +71,7 @@ a:hover {
    display: inline-block;
    width: 100%;
    border-width: 0;
-   border-radius: 24px;
+   border-radius: 20px;
    background-color: var(--color-neutral-light);
    font: inherit;
    padding: 0.5em 1em;
@@ -100,8 +99,8 @@ a:hover {
    background-color: transparent;
 }
 .hotdog.dark {
-   background-color: var(--color-neutral-lighter);
-   color: white;
+   background-color:#f9de8d;
+   color: black;
 }
 
 
@@ -145,6 +144,8 @@ a:hover {
 }
 .filter-bar.header {
    overflow: auto;
+   color: #e9b65a;
+   font-size: 12px;
 }
 
 
@@ -322,11 +323,11 @@ a:hover {
 .circle-button {
    border-radius: 2rem;
    line-height: 3rem;
-   font-size: 2.5em;
+   font-size: 1em;
    width: 3rem;
    height: 3rem;
    text-align: center;
-   background-color: white;
+   background-color: #f9de8d;
    box-shadow: 0.1em 0.2em 0.4em rgba(0,0,0,0.2);
 }
 
