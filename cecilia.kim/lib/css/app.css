@@ -6,7 +6,7 @@
 }
 
 :root {
-   --font-sans: Helvetica, Arial, sans-serif;
+   --font-sans: Roboto sans-serif;
    --font-serif: Cambria, Georgia, serif;
 
    --color-neutral-lighter: #f9de8d;
@@ -57,6 +57,7 @@ a:hover {
    margin: 0.5rem 0;
 }
 .form-input {
+   border-radius: 30px;
    display: inline-block;
    width: 100%;
    border-width: 0;
@@ -70,6 +71,7 @@ a:hover {
    display: inline-block;
    width: 100%;
    border-width: 0;
+   border-radius: 30px;
    background-color: var(--color-neutral-light);
    font: inherit;
    padding: 0.5em 1em;
@@ -452,6 +454,7 @@ a:hover {
    height: var(--header-height);
    line-height: var(--header-height);
    display: flex;
+
 }
 .animal-profile-nav div {
    text-align: center;
@@ -491,7 +494,6 @@ a:hover {
     display: block;
     font-size: 0.8em;
 }
-
 
 
 
