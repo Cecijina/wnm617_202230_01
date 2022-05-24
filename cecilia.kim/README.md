@@ -8,7 +8,7 @@
 
 ## Side Assignments Links
 
-- https://yoonjin.godaddysites.com/
+- https://yoonjinkim.xyz
 - http://ceciliak.com/aau/wnm617/cecilia.kim/csszengarden/
 - http://ceciliak.com/aau/wnm617/cecilia.kim/exploration/CeciliaKim_m03_explorations.pdf
 - http://ceciliak.com/aau/wnm617/cecilia.kim/exploration/CeciliaKim_m04_explorations.pdf

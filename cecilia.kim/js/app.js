@@ -24,6 +24,7 @@ $(() => {
          case "animal-edit-photo-page": AnimalEditPhotoPage(); break;
 
 
+         case "choose-animal-page": ChooseAnimalPage(); break;
          case "choose-location-page": ChooseLocationPage(); break;
       }
    })
