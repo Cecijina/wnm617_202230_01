@@ -148,6 +148,8 @@ const AnimalEditPhotoPage = async () => {
    })
    let [animal] = animals;
 
+   console.log(animal)
+
    $("#animal-edit-photo-page .imagepicker").css({
       "background-image":`url(${animal.img})`
    })
