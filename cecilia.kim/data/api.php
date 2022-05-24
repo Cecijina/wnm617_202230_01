@@ -124,7 +124,7 @@ function makeStatement($data) {
             `track_2022_users`
             (`username`,`email`,`password`,`img`,`date_create`)
             VALUES
-            (?, ?, md5(?), 'https://via.placeholder.com/400/?text=USER', NOW())
+            (?, ?, md5(?), 'https://via.placeholder.com/400/?text=USER', 'uploads/dog1.png', NOW())
             ", $p, false);
          return ["id"=>$c->lastInsertId()];
 
@@ -133,7 +133,7 @@ function makeStatement($data) {
             `track_2022_animals`
             (`user_id`,`name`,`type`,`breed`,`description`,`img`,`date_create`)
             VALUES
-            (?, ?, ?, ?, ?, 'https://via.placeholder.com/400/?text=ANIMAL', NOW())
+            (?, ?, ?, ?, ?, 'https://via.placeholder.com/400/?text=ANIMAL', 'uploads/dog1.png', NOW())
             ", $p, false);
          return ["id"=>$c->lastInsertId()];
 
