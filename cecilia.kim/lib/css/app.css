@@ -485,15 +485,17 @@ a:hover {
 .nav-icon {
     line-height: 2rem;
     display: block;
+
 }
 .nav-icon .icon {
     vertical-align: middle;
     width: 1.5em;
 }
 .nav-icon-label {
-    line-height: 1rem;
+    line-height:1rem;
     display: block;
-    font-size: 0.8em;
+    font-size: 0.6em;
+    color: var(--color-main-dark);
 }
 
 

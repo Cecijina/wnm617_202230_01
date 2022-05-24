@@ -142,7 +142,7 @@ function makeStatement($data) {
             `track_2022_locations`
             (`animal_id`,`lat`,`lng`,`description`,`photo`,`icon`,`date_create`)
             VALUES
-            (?, ?, ?, ?, 'https://via.placeholder.com/400/?text=PHOTO', 'https://via.placeholder.com/400/?text=ICON', NOW())
+            (?, ?, ?, ?, 'https://via.placeholder.com/400/?text=PHOTO', 'uploads/dog1.png', NOW())
             ", $p, false);
          return ["id"=>$c->lastInsertId()];
 
