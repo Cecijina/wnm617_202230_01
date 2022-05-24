@@ -65,6 +65,10 @@ $(() => {
       submitLocationAdd();
    })
 
+   .on("change", "#choose-animal-input select", function(e) {
+      $("#location-animal").val(this.value);
+   })
+
 
    .on("change",".imagepicker input", function(e){
       checkUpload(this.files[0])
@@ -128,8 +132,12 @@ $(() => {
    .on("click",".js-animal-delete", function(e) {
       submitDeleteAnimal();
    })
+   .on("click",".js-animal-delete", function(e) {
+      submitDeleteAnimal();
+   })
    .on("click",".js-location-choose-animal", function(e) {
       $("#location-animal").val(sessionStorage.animalId)
+      $("#location-start").val(-2);
    })
 
 
