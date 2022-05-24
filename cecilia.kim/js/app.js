@@ -15,13 +15,13 @@ $(() => {
          
          case "user-profile-page": UserProfilePage(); break;
          case "user-edit-page": UserEditPage(); break;
-         case "user-edit-page": UserEditPhotoPage(); break;
+         case "user-edit-photo-page": UserEditPhotoPage(); break;
          
          case "animal-profile-page": AnimalProfilePage(); break;
          case "animal-edit-page": AnimalEditPage(); break;
          case "animal-add-page": AnimalAddPage(); break;
          case "animal-location-page": AnimaalLocationPage(); break;
-         case "user-edit-page": AnimalEditPhotoPage(); break;
+         case "animal-edit-photopage": AnimalEditPhotoPage(); break;
 
 
          case "choose-location-page": ChooseLocationPage(); break;
